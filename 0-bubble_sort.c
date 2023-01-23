@@ -2,7 +2,7 @@
 
 /**
  * swap - Swaps values of pointers @a with @b
- * @a: The first pointer whose value is swapped 
+ * @a: The first pointer whose value is swapped
  * @b: The second pointer whose value is swapped
  *
  * Return: void.
@@ -25,7 +25,12 @@ void swap(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i,j;
+	size_t i, j;
+
+	if (array == NULL || size < 2)
+	{
+		return;
+	}
 
 	for (i = 0; i < size - 1; i++)
 	{
@@ -35,7 +40,7 @@ void bubble_sort(int *array, size_t size)
 			{
 				swap(&array[j], &array[j + 1]);
 				print_array(array, size);
-			}	
+			}
 		}
 	}
 }
