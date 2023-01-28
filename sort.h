@@ -27,4 +27,5 @@ void print_list(const listint_t *list);
 /*types of sorting algorithyms used*/
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void shell_sort(int *array, size_t size);
 #endif /* _SORT_H_ */
